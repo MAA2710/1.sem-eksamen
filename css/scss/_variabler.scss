@@ -1,0 +1,29 @@
+//Variabler er små ting som jeg 
+
+//Eksembler
+//media queries
+$laptop:720px; 
+$desktop:1400px;
+
+// colors
+$white: #fff; //i din kod inde i _content.scss skriver du background: rgba($white); for at få fat i $white: #fff;.
+$black: #151515;
+$orange: #E0AD64;
+$green: #2A3423;
+$greenop:rgba(48,59,39,0.8);
+
+//gradient background color
+$black-green-bc: linear-gradient(rgba(42,52,35,1) 0%, rgba(21,21,21,1) 20%, rgba(21,21,21,1) 80%, rgba(42,52,35,1) 100%); 
+$green-black-bc: linear-gradient(rgba(21,21,21,1) 0%, rgba(42,52,35,1) 20%, rgba(42,52,35,1) 80%, rgba(21,21,21,1) 100%); 
+// sizes
+$padding-x: 20px;
+$padding-y: 10px;
+$radius: 15px;
+
+// full-width
+$full-width: calc(100% - 40px);
+
+//font
+$overskrift: 'Roboto', sans-serif;
+$brødtekst: '';
+//________________________________________________

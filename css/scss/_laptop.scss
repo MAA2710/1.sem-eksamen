@@ -1,0 +1,30 @@
+//Pc
+@media only screen and (min-width: $laptop) {
+    nav {
+    background-color: $greenop;
+        input {
+            display: none;
+        }
+        label {
+            display: none;
+        }
+        ul {
+            position: static;
+            flex-direction: row;
+            height: 40px;
+            max-height: 40px;
+            width: auto;
+            justify-content: space-between;
+
+            background: transparent;
+            li {
+                
+                a {
+                    width: 100px;
+                    justify-content: flex-end;
+                    
+                }
+            }
+        }
+    }
+}

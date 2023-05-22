@@ -1,0 +1,10 @@
+//Det er her at du fortæller at alle scss snakker sammen. (HUSK RÆKKEFØLGE!!!)
+
+@import "scss/imports";
+@import "scss/variabler";
+@import "scss/mixin";
+@import "scss/globals";
+@import "scss/content";
+@import "scss/burgermenu";
+@import "scss/desktop";
+@import "scss/laptop";

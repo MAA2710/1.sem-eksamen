@@ -1,0 +1,217 @@
+//Det er her du skriver alt din css styling kode. (HUSK at du ikke skal skrive i den originale style.css).
+
+//________________________________________________
+//Mobil first
+h1 {
+  font-family: "prata"; //Font: Prata
+  font-weight: 100;
+  font-size: 16px;
+  color: $orange;
+}
+
+p {
+  font-family: "inter"; //Font: Inter
+  font-size: 12px;
+  font-weight: 200;
+  line-height: 1.5em; //En linje afstand på 1,5 i word.
+  color: $white;
+}
+
+a {
+  font-family: "inter"; //Font: Inter
+  font-size: 12px;
+  font-weight: 400;
+  color: $orange;
+}
+
+header {
+  nav {
+    width: 100%;
+
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 70px;
+    padding: 10px;
+
+    z-index: 3;
+
+    // background-color: $greenop;
+
+    img {
+      width: 70px;
+    }
+  }
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  width: 100%;
+
+  background-color: $black;
+
+  .hero {
+    display: flex;
+    justify-content: center; //sidder teksten til at være i midden
+    flex-direction: column;
+
+    position: relative;
+    z-index: 0;
+
+    width: 100%;
+
+    top: 0px;
+  }
+
+  .overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+    z-index: 1;
+
+    width: 100%;
+
+    font-size: 24px;
+    color: $white;
+  }
+
+  h3 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    width: 73%;
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    width: 100%;
+
+    background-color: $black;
+
+    .billede_tekst {
+      display: flex;
+      justify-content: center;
+
+      width: 100%;
+      height: 220px;
+
+      background: $black;
+
+      &:nth-of-type(2n) {
+        background: $green-black-bc;
+      }
+
+      .content_size {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+      }
+
+      .text_section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        text-align: left;
+
+        width: 100%;
+
+        gap: 15px;
+      }
+      .billede_section {
+        display: none;
+      }
+    }
+  }
+}
+
+footer {
+  width: 100%;
+
+  border-top: 1px solid $white;
+  background-color: $black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  .text_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    padding-top: 20px;
+
+    // background-color: rgb(39, 75, 63);
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: left;
+
+      width: 100%;
+
+      li {
+        display: flex;
+
+        list-style-type: none;
+
+        &:first-child {
+          a {
+            display: flex;
+            color: $orange;
+          }
+        }
+
+        a {
+          font-family: "inter"; //Font: Inter
+          font-size: 12px;
+          font-weight: 200;
+          line-height: 30px;
+
+          color: $white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  img {
+    width: 160px;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-top: 1px solid $white;
+
+    width: 80%;
+
+    p {
+      color: $white;
+    }
+  }
+}
