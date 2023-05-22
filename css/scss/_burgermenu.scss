@@ -1,5 +1,4 @@
 nav {
-
   &:has(input:checked) {
     background-color: $green;
   }
@@ -51,35 +50,88 @@ nav {
     }
   }
   ul {
-    list-style: none;
-    width: 100%;
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    max-height: 0;
-    height: calc(100vh - 70px);
-    overflow: hidden;
-    background: linear-gradient(rgba(42,52,35,1) 0%, rgba(21,21,21,1) 5%, rgba(21,21,21,1) 80%, rgba(42,52,35,1) 100%);
     position: absolute;
+
+    width: 100%;
+    max-height: 0;
+
+    list-style: none;
+    height: calc(100vh - 70px);
+
+    overflow: hidden;
+
     top: 70px;
     left: 0;
-    z-index: 99;
+
+    gap: 40px;
+
+    z-index: 3;
+
+    background: linear-gradient(
+      rgba(42, 52, 35, 1) 0%,
+      rgba(42, 52, 35, 1) 5%,
+      rgba(21, 21, 21, 1) 80%,
+      rgba(21, 21, 21, 1) 100%
+    );
+
     transition: 0.4s;
 
     li {
       width: 100%;
       padding: 0 30px;
 
+      margin-top: 80px;
+
       a {
         display: flex;
         justify-content: flex-start;
+
         width: 100%;
-        padding: 15px;
-        color: white;
+
+        font-size: 24px;
+        color: $orange;
         text-decoration: none;
-        border-bottom: 1px solid $white;
+        // border-bottom: 1px solid $white; //border under tekst
+      }
+    }
+    .burger-footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      bottom: 0;
+
+      width: 100%;
+
+      border-top: 1px solid $white;
+
+      background-color: $black;
+      img {
+        margin-top: 50px;
+        width: 160px;
+      }
+      .border {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 20px;
+
+        width: 80%;
+
+        border-top: 1px solid $white;
+
+        p {
+          display: flex;
+          
+          width: 100%;
+        }
       }
     }
   }
 }
-

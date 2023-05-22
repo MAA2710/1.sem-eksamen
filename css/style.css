@@ -125,14 +125,15 @@ footer .text_box {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 100%;
   padding-top: 20px;
+  gap: 30px;
 }
 footer .text_box ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: left;
   width: 100%;
 }
 footer .text_box ul li {
@@ -153,8 +154,8 @@ footer .text_box ul li a {
 }
 footer img {
   width: 160px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 footer .border {
   display: flex;
@@ -213,33 +214,61 @@ nav label span:last-child {
   transform: translateY(-50%);
 }
 nav ul {
-  list-style: none;
-  width: 100%;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   align-items: center;
+  position: absolute;
+  width: 100%;
   max-height: 0;
+  list-style: none;
   height: calc(100vh - 70px);
   overflow: hidden;
-  background: linear-gradient(rgb(42, 52, 35) 0%, rgb(21, 21, 21) 5%, rgb(21, 21, 21) 80%, rgb(42, 52, 35) 100%);
-  position: absolute;
   top: 70px;
   left: 0;
-  z-index: 99;
+  gap: 40px;
+  z-index: 3;
+  background: linear-gradient(rgb(42, 52, 35) 0%, rgb(42, 52, 35) 5%, rgb(21, 21, 21) 80%, rgb(21, 21, 21) 100%);
   transition: 0.4s;
 }
 nav ul li {
   width: 100%;
   padding: 0 30px;
+  margin-top: 80px;
 }
 nav ul li a {
   display: flex;
   justify-content: flex-start;
   width: 100%;
-  padding: 15px;
-  color: white;
+  font-size: 24px;
+  color: #E0AD64;
   text-decoration: none;
-  border-bottom: 1px solid #fff;
+}
+nav ul .burger-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #fff;
+  background-color: #151515;
+}
+nav ul .burger-footer img {
+  margin-top: 50px;
+  width: 160px;
+}
+nav ul .burger-footer .border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 80%;
+  border-top: 1px solid #fff;
+}
+nav ul .burger-footer .border p {
+  display: flex;
+  width: 100%;
 }
 
 @media only screen and (min-width: 720px) {
