@@ -1,30 +1,105 @@
 //Pc
 @media only screen and (min-width: $laptop) {
-    nav {
-    background-color: $greenop;
-        input {
-            display: none;
-        }
-        label {
-            display: none;
-        }
-        ul {
-            position: static;
-            flex-direction: row;
-            height: 40px;
-            max-height: 40px;
-            width: auto;
-            justify-content: space-between;
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
 
-            background: transparent;
-            li {
-                
-                a {
-                    width: 100px;
-                    justify-content: flex-end;
-                    
+    height: 110px;
+
+    z-index: 3;
+
+    background-color: $greenop;
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 80%;
+
+      img {
+        width: 160px;
+      }
+
+      input {
+        display: none;
+      }
+      label {
+        display: none;
+      }
+      ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: static;
+        flex-direction: row;
+        height: 40px;
+        max-height: 40px;
+        width: auto;
+        justify-content: space-between;
+
+        background: transparent;
+
+        .burger-footer {
+          display: none;
+        }
+
+        li {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0px;
+          width: auto;
+
+          a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            justify-content: flex-end;
+
+            font-size: 16px;
+            color: $white;
+
+            margin-top: 0px;
+          }
+        }
+      }
+    }
+  }
+  main{
+    .hero{
+        .overlay{
+            h3{
+                width: 100%;
+                font-size: 96px;
+            }
+        }
+    }
+    .content{
+        .billede_tekst{
+            height: 750px;
+            .content_size{
+                display: flex;
+                justify-content: center;
+                .text_section{
+                    width: 50%;
+                    h1{
+                        font-size: 48px;
+                    }
+                    p{
+                        font-size: 20px;
+                    }
+                    a{
+                        font-size: 24px;
+                    }
+                }
+                .billede_section{
+                    display: block;
+                    img{}
                 }
             }
         }
     }
+  }
 }
