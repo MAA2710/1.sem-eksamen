@@ -1,17 +1,16 @@
 //Pc
 @media only screen and (min-width: $laptop) {
-    
-    h1{
-        font-size: 48px;
-    }
+  h1 {
+    font-size: 48px;
+  }
 
-    p{
-        font-size: 20px;
-    }
-    
-    a{
-        font-size: 24px;
-    }
+  p {
+    font-size: 20px;
+  }
+
+  a {
+    font-size: 24px;
+  }
 
   header {
     display: flex;
@@ -43,13 +42,14 @@
       ul {
         display: flex;
         justify-content: center;
+        justify-content: space-between;
         align-items: center;
         position: static;
         flex-direction: row;
+        
         height: 40px;
         max-height: 40px;
         width: auto;
-        justify-content: space-between;
 
         background: transparent;
 
@@ -80,70 +80,134 @@
       }
     }
   }
-  main{
-    .hero{
-        .overlay{
-            h3{
-                width: 100%;
-                font-size: 96px;
-            }
+  main {
+    .hero {
+      .overlay {
+        h3 {
+          width: 100%;
+          font-size: 96px;
         }
+      }
     }
-    .content{
-        .billede_tekst{
-            height: 750px;
+    .content {
+      .billede_tekst {
+        height: 750px;
 
-            &:nth-of-type(2n) {
-                background: $green-black-bc;
-                
-                .content_size{
-                    flex-direction: row-reverse;
-                }
+        &:nth-of-type(2n) {
+          background: $green-black-bc;
 
-                .billede_section{
-                    flex-direction: row-reverse;
-                }
-                
-              }
-              .content_size{
-                  display: flex;
-                  justify-content: space-between;
-                  align-items: center;
-                  
-                  
-            
-                .text_section{
-                    display: flex;
-                    justify-content: space-between;
+          .content_size {
+            flex-direction: row-reverse;
+          }
 
-                    width: 45%;
-                    height: 50%;
-                }
-                .billede_section{
-                    display: block;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-
-                    gap: 20px;
-
-                    width: 45%;
-                    height: 50%;
-
-                    img{
-                        width: 50%;
-                        height: auto;
-                        
-                        object-fit: cover;
-                        margin-bottom: 20%;
-
-                        &:nth-of-type(2n) {
-                            margin-top: 20%;
-                          }
-                    }
-                }
-            }
+          .billede_section {
+            flex-direction: row-reverse;
+          }
         }
+        .content_size {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .text_section {
+            display: flex;
+            justify-content: space-between;
+
+            width: 45%;
+            height: 50%;
+          }
+          .billede_section {
+            display: block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            gap: 20px;
+
+            width: 45%;
+            height: 50%;
+
+            img {
+              width: 50%;
+              height: auto;
+
+              object-fit: cover;
+              margin-bottom: 20%;
+
+              &:nth-of-type(2n) {
+                margin-top: 20%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 100%;
+
+    .logo_liste {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      width: 80%;
+
+      margin-top: 60px;
+      margin-bottom: 60px;
+
+      a {
+        width: 20%;
+        .footer_logo {
+          display: block;
+
+          width: 100%;
+        }
+      }
+
+      .text_box {
+        display: flex;
+        flex-direction: row;
+
+        gap: 80px;
+
+        padding-top: 0px;
+        width: 70%;
+
+        ul {
+          display: flex;
+          align-items: baseline;
+
+          padding-right: 0px;
+
+            width: 100%;
+
+          li {
+            width: 100%;
+            a {
+              font-size: 20px;
+
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+    img {
+      display: none;
+    }
+    .border {
+      display: flex;
+      justify-content: left;
+      p {
+        font-size: 12px;
+        padding-left: 40px;
+      }
     }
   }
 }

@@ -160,6 +160,10 @@ footer {
   flex-direction: column;
   flex-wrap: wrap;
 
+  .footer_logo{
+    display: none;
+  }
+
   .text_box {
     display: flex;
     justify-content: center;
