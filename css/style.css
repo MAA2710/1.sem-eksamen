@@ -286,13 +286,13 @@ nav ul .burger-footer .border p {
 
 @media only screen and (min-width: 720px) {
   h1 {
-    font-size: 48px;
+    font-size: 42px;
   }
   p {
     font-size: 20px;
   }
   a {
-    font-size: 24px;
+    font-size: 20px;
   }
   header {
     display: flex;
@@ -370,6 +370,7 @@ nav ul .burger-footer .border p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 80%;
   }
   main .content .billede_tekst .content_size .text_section {
     display: flex;
@@ -450,15 +451,15 @@ nav ul .burger-footer .border p {
     padding-left: 40px;
   }
 }
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1441px) {
   h1 {
     font-size: 48px;
   }
   p {
-    font-size: 20px;
+    font-size: 22px;
   }
   a {
-    font-size: 24px;
+    font-size: 22px;
   }
   header {
     display: flex;
@@ -515,12 +516,21 @@ nav ul .burger-footer .border p {
     font-size: 20px;
     color: #fff;
   }
+  main {
+    display: flex;
+    justify-content: center;
+  }
   main .hero .overlay h3 {
     width: 100%;
     font-size: 96px;
   }
+  main .content {
+    display: flex;
+    justify-content: center;
+  }
   main .content .billede_tekst {
-    height: 750px;
+    height: 33%;
+    width: 100%;
   }
   main .content .billede_tekst:nth-of-type(2n) {
     background: linear-gradient(rgb(21, 21, 21) 0%, rgb(42, 52, 35) 20%, rgb(42, 52, 35) 80%, rgb(21, 21, 21) 100%);
@@ -535,6 +545,7 @@ nav ul .burger-footer .border p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 80%;
   }
   main .content .billede_tekst .content_size .text_section {
     display: flex;
@@ -573,8 +584,8 @@ nav ul .burger-footer .border p {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 80%;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 80px;
+    margin-bottom: 80px;
   }
   footer .logo_liste a {
     width: 20%;
@@ -600,7 +611,8 @@ nav ul .burger-footer .border p {
     width: 100%;
   }
   footer .logo_liste .text_box ul li a {
-    font-size: 20px;
+    font-size: 30px;
+    line-height: 60px;
     width: 100%;
   }
   footer img {
@@ -611,7 +623,7 @@ nav ul .burger-footer .border p {
     justify-content: left;
   }
   footer .border p {
-    font-size: 12px;
+    font-size: 18px;
     padding-left: 40px;
   }
 }/*# sourceMappingURL=style.css.map */
