@@ -1,5 +1,18 @@
 //Pc
 @media only screen and (min-width: $laptop) {
+    
+    h1{
+        font-size: 48px;
+    }
+
+    p{
+        font-size: 20px;
+    }
+    
+    a{
+        font-size: 24px;
+    }
+
   header {
     display: flex;
     justify-content: center;
@@ -79,24 +92,55 @@
     .content{
         .billede_tekst{
             height: 750px;
-            .content_size{
-                display: flex;
-                justify-content: center;
+
+            &:nth-of-type(2n) {
+                background: $green-black-bc;
+                
+                .content_size{
+                    flex-direction: row-reverse;
+                }
+
+                .billede_section{
+                    flex-direction: row-reverse;
+                }
+                
+              }
+              .content_size{
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  
+                  
+            
                 .text_section{
-                    width: 50%;
-                    h1{
-                        font-size: 48px;
-                    }
-                    p{
-                        font-size: 20px;
-                    }
-                    a{
-                        font-size: 24px;
-                    }
+                    display: flex;
+                    justify-content: space-between;
+
+                    width: 45%;
+                    height: 50%;
                 }
                 .billede_section{
                     display: block;
-                    img{}
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    gap: 20px;
+
+                    width: 45%;
+                    height: 50%;
+
+                    img{
+                        width: 50%;
+                        height: auto;
+                        
+                        object-fit: cover;
+                        margin-bottom: 20%;
+
+                        &:nth-of-type(2n) {
+                            margin-top: 20%;
+                          }
+                    }
                 }
             }
         }
