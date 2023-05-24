@@ -13,6 +13,13 @@ h1 {
   color: #E0AD64;
 }
 
+h2 {
+  font-family: "inter";
+  font-size: 15px;
+  font-weight: 200;
+  color: #E0AD64;
+}
+
 p {
   font-family: "inter";
   font-size: 12px;
@@ -96,7 +103,9 @@ main .content .billede_tekst {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 220px;
+  height: 33%;
+  padding-top: 30px;
+  padding-bottom: 30px;
   background: #151515;
 }
 main .content .billede_tekst:nth-of-type(2n) {
@@ -106,6 +115,7 @@ main .content .billede_tekst .content_size {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 90%;
 }
 main .content .billede_tekst .text_section {
@@ -118,6 +128,26 @@ main .content .billede_tekst .text_section {
 }
 main .content .billede_tekst .billede_section {
   display: none;
+}
+main .content .billede_tekst .billede_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 6%;
+  padding-top: 6%;
+  padding-bottom: 6%;
+}
+main .content .billede_tekst .billede_box img {
+  width: 40%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding-bottom: 30%;
+}
+main .content .billede_tekst .billede_box img:nth-of-type(2n) {
+  padding-top: 30%;
+  padding-bottom: 0;
 }
 
 footer {
@@ -356,6 +386,7 @@ nav ul .burger-footer .border p {
   }
   main .content .billede_tekst {
     height: 750px;
+    padding: 0px;
   }
   main .content .billede_tekst:nth-of-type(2n) {
     background: linear-gradient(rgb(21, 21, 21) 0%, rgb(42, 52, 35) 20%, rgb(42, 52, 35) 80%, rgb(21, 21, 21) 100%);

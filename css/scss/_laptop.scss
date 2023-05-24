@@ -92,6 +92,7 @@
     .content {
       .billede_tekst {
         height: 750px;
+        padding: 0px;
 
         &:nth-of-type(2n) {
           background: $green-black-bc;
