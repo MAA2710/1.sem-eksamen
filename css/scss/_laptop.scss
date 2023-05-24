@@ -4,12 +4,51 @@
     font-size: 42px;
   }
 
+  h2{
+    font-size: 24px;
+  }
+
+  h3{
+    line-height: 1.1em;
+  }
+
   p {
     font-size: 20px;
   }
 
   a {
     font-size: 20px;
+  }
+
+  .knap {
+    align-self: center;
+    // display: none;
+    font-family: "inter"; //Font: Inter
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+  
+    color: $white;
+  
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+  
+  
+    border: 1px solid #151515;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+  
+    background-color: $orange;
+  
+    margin-top: 30px;
+
+    transition: .4s;
+
+    :hover{
+
+    }
   }
 
   header {
@@ -28,6 +67,11 @@
       justify-content: space-between;
       align-items: center;
       width: 80%;
+
+      transition: .4s;
+      :hover{
+        color: $orange;
+      }
 
       img {
         width: 160px;
@@ -91,8 +135,15 @@
     }
     .content {
       .billede_tekst {
-        height: 750px;
+        height: 33%;
         padding: 0px;
+
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        h1{
+          font-size: 30px;
+        }
 
         &:nth-of-type(2n) {
           background: $green-black-bc;
@@ -109,16 +160,41 @@
           display: flex;
           justify-content: space-between;
           align-items: center;
+          flex-direction: row;
 
           width: 80%;
+
+          &--underside{
+            width: 90%;
+          }
 
           .text_section {
             display: flex;
             justify-content: space-between;
 
             width: 45%;
-            height: 50%;
+            gap: 50px;
           }
+
+          .underside_text_section {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            width: 45%;
+            // gap: 20px;
+
+            h2{
+              font-size: 18px;
+              padding-top: 4%;
+            }
+
+            p{
+              font-size: 16px;
+              padding-top: 2%;
+            }
+          }
+          
           .billede_section {
             display: block;
             display: flex;
@@ -142,6 +218,24 @@
               }
             }
           }
+          .billede_box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+  
+            width: 50%;
+  
+            gap: 6%;
+  
+            padding-top: 6%;
+            padding-bottom: 6%;
+          }
+        }
+        iframe {
+          height: 100%;
+          width: 50%;
+  
+          margin-top: 20px;
         }
       }
     }
