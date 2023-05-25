@@ -51,6 +51,10 @@ a {
   color: #E0AD64;
 }
 
+.mini_links {
+  font-size: 18px;
+}
+
 .knap {
   text-align: center;
   align-self: center;
@@ -183,8 +187,14 @@ main .content .billede_tekst .content_size .underside_text_section {
   display: flex;
   flex-direction: column;
 }
+main .content .billede_tekst .content_size .underside_text_section h2 {
+  margin-top: 4%;
+}
+main .content .billede_tekst .content_size .underside_text_section p {
+  margin-top: 2%;
+}
 main .content .billede_tekst iframe {
-  height: 150%;
+  height: 100%;
   width: 90%;
   margin-top: 20px;
 }
@@ -368,6 +378,10 @@ nav ul .burger-footer .border p {
   }
   a {
     font-size: 20px;
+  }
+  .mini_links {
+    font-size: 0px;
+    display: none;
   }
   .knap {
     align-self: center;

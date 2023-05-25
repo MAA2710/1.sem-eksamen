@@ -45,6 +45,10 @@ a {
   color: $orange;
 }
 
+.mini_links{
+  font-size: 18px;
+}
+
 .knap {
   text-align: center;
   align-self: center;
@@ -214,10 +218,17 @@ main {
         .underside_text_section{
           display: flex;
           flex-direction: column;
+
+          h2{
+            margin-top: 4%;
+          }
+          p{
+            margin-top: 2%;
+          }
         }
       }
       iframe {
-        height: 150%;
+        height: 100%;
         width: 90%;
 
         margin-top: 20px;
