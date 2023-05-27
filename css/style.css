@@ -6,12 +6,10 @@
   box-sizing: border-box;
 }
 
-/*Scroll smoth */
 html {
   scroll-behavior: smooth;
 }
 
-/**************Over ordnet tekst ændringer**************/
 h1 {
   font-family: "prata";
   font-weight: 100;
@@ -76,10 +74,7 @@ a {
   margin-top: 30px;
   width: 60%;
 }
-/*------------------------------------------------*/
 
-/* Mobil */
-/**************Header*************/
 header {
   position: fixed;
   display: flex;
@@ -102,9 +97,7 @@ header nav {
 header nav img {
   width: 70px;
 }
-/*------------------------------*/
 
-/********************Main********************/
 main {
   display: flex;
   justify-content: center;
@@ -205,10 +198,7 @@ main .content .billede_tekst iframe {
   width: 90%;
   margin-top: 20px;
 }
-/*---------------------------------------------------------------------------------*/
 
-
-/*********************Footer************************/
 footer {
   width: 100%;
   border-top: 1px solid #fff;
@@ -268,9 +258,7 @@ footer .border {
 footer .border p {
   color: #fff;
 }
-/*-------------------------------------------------------*/
 
-/********************Burger Menu********************/
 nav:has(input:checked) {
   background-color: #2A3423;
 }
@@ -374,12 +362,8 @@ nav ul .burger-footer .border p {
   display: flex;
   width: 100%;
 }
-/*---------------------------------------------------------*/
 
-/* Laptop */
 @media only screen and (min-width: 720px) {
-
-/**************Over Ordnet Tekst ændringer*************/
   h1 {
     font-size: 42px;
   }
@@ -417,9 +401,6 @@ nav ul .burger-footer .border p {
     margin-top: 30px;
     transition: 0.4s;
   }
-/*-------------------------------------------------------*/
-
-  /**************Header*************/
   header {
     display: flex;
     justify-content: center;
@@ -480,9 +461,6 @@ nav ul .burger-footer .border p {
     color: #fff;
     margin-top: 0px;
   }
-/*-----------------------------------------------------*/
-  
-/**************Main*************/
   main .hero .overlay h3 {
     width: 100%;
     font-size: 96px;
@@ -568,9 +546,6 @@ nav ul .burger-footer .border p {
     width: 50%;
     margin-top: 20px;
   }
-/*------------------------------------------------------------------------------------*/
-
-/**************Footer*************/
   footer {
     display: flex;
     justify-content: center;
@@ -629,12 +604,7 @@ nav ul .burger-footer .border p {
     padding-left: 40px;
   }
 }
-/*---------------------------------------------------------*/
-
-/* Desktop */
 @media only screen and (min-width: 1441px) {
-
-  /**************Over Ordnet Ændringer*************/
   h1 {
     font-size: 48px;
   }
@@ -663,9 +633,6 @@ nav ul .burger-footer .border p {
     margin-top: 50px;
     transition: 0.4s;
   }
-/*---------------------------------------------------------*/
-
-/**************Header*************/
   header {
     display: flex;
     justify-content: center;
@@ -725,9 +692,6 @@ nav ul .burger-footer .border p {
   header nav ul li a :hover {
     color: #E0AD64;
   }
-/*--------------------------------------------*/
-
-/**************Main*************/
   main {
     display: flex;
     justify-content: center;
@@ -795,9 +759,6 @@ nav ul .burger-footer .border p {
   main .content .billede_tekst .content_size .billede_section img:nth-of-type(2n) {
     margin-top: 20%;
   }
-/*--------------------------------------------------------------------------------------*/
-
-/**************Footer*************/
   footer {
     display: flex;
     justify-content: center;
@@ -856,5 +817,4 @@ nav ul .burger-footer .border p {
     font-size: 18px;
     padding-left: 40px;
   }
-}
-/*------------------------------------------------------*/
+}/*# sourceMappingURL=style.css.map */
